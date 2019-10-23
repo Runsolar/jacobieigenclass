@@ -1,5 +1,5 @@
 /*
-The C++ class of the classical Jacobi's method implementation for finding eigenvalues
+The C++ class of the classical Jacobi's method implementation for finding eigenvalues and
 eigenvectors of a symetric matrix which represented as 1-dimension array.
 The eigenvalues of a symetric matrix will be on the array eigenVals of the class JacobiEigensClass.
 The i-th eigenvector is stored in array eigenVecs of the class JacobiEigensClass.
