@@ -18,20 +18,20 @@ int main() {
 
     obj->calculateEigensByJacobiMethod();
     
+    cout << "Eigenvals: " << endl;
     for(int i=0; i < 4; i++) {
-        cout << obj->eigenVals[i] << endl;
+        cout << (double) obj->eigenVals[i] << endl;
     }
     
-    cout << endl;
+    cout << endl << "Eigenvectors: " << endl;
     for(int i = 0; i < 4; i++)
     {
         cout << "[";
         for(int j = 0; j < 4; j++)
         {
-            cout << obj->eigenVecs[i*4+j] << ", ";
+            cout << (double) obj->eigenVecs[i*4+j] << ", ";
         }
-        cout << "]";
-        cout << endl;
+        cout << "]" << endl;
     }
     cout << endl;
  
