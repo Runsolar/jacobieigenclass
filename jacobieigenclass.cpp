@@ -4,7 +4,7 @@
 #include "jacobieigenclass.h"
 
 //using namespace std;   
-JacobiEigensClass::JacobiEigensClass(const std::vector<double> &inputMatrix, double epsilon): epsilon(epsilon), N(static_cast<int>(sqrt(inputMatrix.size()))) {
+JacobiEigensClass::JacobiEigensClass(const std::vector<double> &inputMatrix, const double epsilon): epsilon(epsilon), N(static_cast<int>(sqrt(inputMatrix.size()))) {
     maxIterations = N * N * N;
     originVector = new double[N * N];
     eigenVecs = new double[N * N];
