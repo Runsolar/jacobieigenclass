@@ -32,7 +32,7 @@ public:
     double* eigenVecs = NULL;       //output array with eigenvalues
     double* eigenVals = NULL;       //output array with eigenvector
 
-    JacobiEigensClass(const std::vector<double> &inputMatrix, double epsilon);
+    JacobiEigensClass(const std::vector<double> &inputMatrix, const double epsilon);
     ~JacobiEigensClass();
     void calculateEigensByJacobiMethod();
 
